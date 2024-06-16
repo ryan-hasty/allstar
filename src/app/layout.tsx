@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
-import Image from "next/image";
+import Header from "@/app/header/layout";
 
 
 export const metadata: Metadata = {
@@ -16,51 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-          <div className="fixed top-0 min-w-full max-h-40 xl:max-h-60 xl:max-w-60 bg-[#FFFFFF] z-20">
-              <div className="flex min-w-full items-center bg-[#FFFFFF]">
-                  <Image width={300} height={300} src="/assets/allstar-logo.jpg" alt="Allstar Logo"></Image>
-                      <div className="z-50 h-1 md:h-2 bg-[#F50000] right-line w-5/12 md:w-10/12">
-                          <div className="hidden md:block">
-                              <ul className="z-40 flex justify-start -mt-9 ml-16 xl:top-20 about-line-position text-2xl gap-20 w-.75 font-sans text-[#0F2E6C]">
-                                  <li>
-                                      <a href="#">
-                                          Home
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="#">
-                                          Roofing
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="#">
-                                          Fencing
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="#">
-                                          About
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="#">
-                                          Contact
-                                      </a>
-                                  </li>
-                                  <li className="ml-auto text-2xl text-[#0F2E6C] font-bold">
-                                      GIVE US A CALL!
-                                  </li>
-                                  <li className="mr-32 -ml-14 text-[#0F2E6C] font-bold">
-                                      501-339-5707
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-              </div>
-          </div>
-          <main>{children}</main>
-      </body>
+    <body>
+    <Header></Header>
+    <main>{children}</main>
+    </body>
     </html>
   );
 }

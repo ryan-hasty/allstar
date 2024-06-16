@@ -1,16 +1,11 @@
-export default function Fencinig(){
-    return <div className="flex justify-center">
-        <div className="text-3xl text-[#555555] mt-60 max-w-5xl text-center">
-            <div className="pb-10 text-6xl font-bold -mb-5 text-[#0F2E6C]">
-                Roofing Replacements and Repairs
-            </div>
+import Standard from "@/app/standard-info/page";
 
-            <div className="mt-7">
-                FENCING PAGE
-                At Allstar Roofing and Fencing, our mission is to provide dependable roof and fence installation and repair
-                services. With 20 years of experience, we are dedicated to delivering the highest quality workmanship and
-                ensuring complete customer satisfaction.
-            </div>
-        </div>
-    </div>
+export default function Fencing(){
+    let title = "Fencing Replacements and Repairs"
+    let description = "We specialize in providing durable roofing solutions with expert installation " +
+        "and meticulous attention to detail. We use hand-driven nails to ensure precise placement, optimal " +
+        "sealing, and enhanced durability. This meticulous approach extends lifespan, ensures exceptional " +
+        "performance, and adds value to your property. We deliver roofing solutions that stand the test of time."
+
+    return Standard({title, description})
 }
