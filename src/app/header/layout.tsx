@@ -13,27 +13,27 @@ export default function Header() {
                     <div className="hidden md:block">
                         <ul className="z-40 flex justify-start text-nowrap -mt-9 ml-16 xl:top-20 about-line-position text-2xl gap-20 w-.75 font-sans text-[#0F2E6C]">
                             <li>
-                                <Link href={"/home"}>
+                                <Link href={"/home"} className="hover:text-[#F50000]">
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/roofing"}>
+                                <Link href={"/roofing"} className="hover:text-[#F50000]">
                                     Roofing
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/fencing"}>
+                                <Link href={"/fencing"} className="hover:text-[#F50000]">
                                     Fencing
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/about"}>
+                                <Link href={"/about"} className="hover:text-[#F50000]">
                                     About
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"/contact"}>
+                                <Link href={"/contact"} className="hover:text-[#F50000]">
                                     Contact
                                 </Link>
                             </li>
