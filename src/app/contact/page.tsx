@@ -1,17 +1,53 @@
 'use client';
+import React, {useState} from 'react';
 import ContactForm from '@/app/components/form';
 import Standard from "@/app/standard-info/page";
+import Image from "next/image";
 
 export default function Contact() {
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleClick = () => {
+        setIsClicked(true);
+    };
+
     return (
-        <div>
-            <Standard title={"Reach Out"} />
-            <div className="flex items-start justify-center mt-10 border-8 gap-32">
-                <div className="flex flex-col text-3xl mt-2 gap-y-10">
-                    <div>Phone Number: 281-785-0030</div>
-                    <div>Email Address: allstarfencing33@gmail.com</div>
+        <div className="max-w-5xl mx-auto py-8">
+            <Standard title={"Contact Allstar"} />
+            <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-12 sm:mt-8 lg:ml-32">
+                <div className="flex flex-col text-2xl gap-y-4 font-semibold text-center md:text-left">
+                    <div className="mb-6 sm:mt-10">
+                        <div className="sm:text-3xl text-2xl font-bold text-[#0F2E6C]">
+                            CALL NOW!
+                        </div>
+                        <div>
+                            <a href="tel:832-885-0753" className="text-[#555555] hover:text-[#F50000] text-2xl font-bold">
+                            832-885-0753
+                            </a>
+                        </div>
+                    </div>
+                    <div className="mb-6">
+                        <div className="text-3xl font-bold text-[#0F2E6C]">Email:</div>
+                        <a
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=allstarfencing33@gmail.com"
+                            target="_blank"
+                            className={`text-[#555555] hover:text-[#F50000] ${isClicked ? 'text-[#F50000]' : ''}`}
+                            onClick={handleClick}>
+                            allstarfencing33@gmail.com
+                        </a>
+
+                    </div>
+                    <div className="mt-5 flex">
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100077235862867"
+                            target={"_blank"}
+                            className="bg-white">
+                            <Image src="/assets/miscImages/facebook-logo.svg" alt="facebook-logo" width={40}
+                                   height={40}></Image>
+                        </a>
+                    </div>
                 </div>
-                <div className="p-4 rounded border-black w-full max-w-xl max-h-10 text-xl">
+                <div className="w-full max-w-xs md:max-w-2xl">
                     <ContactForm/>
                 </div>
             </div>
