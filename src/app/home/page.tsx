@@ -1,4 +1,4 @@
-import Standard from "@/app/standard-info/page";
+import Standard from "@/app/components/standard";
 import GalleryBox from "@/app/components/gallery-box";
 import GeneralDesc from "@/app/components/general-desc";
 import React from "react";

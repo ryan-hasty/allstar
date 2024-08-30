@@ -1,5 +1,5 @@
-import Standard from "@/app/standard-info/page";
 import React from "react";
+import Standard from "@/app/components/standard";
 import MultipleItems from "@/app/components/slider";
 
 export default function Roofing(){

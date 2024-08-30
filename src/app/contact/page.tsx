@@ -1,7 +1,7 @@
 'use client';
 import React, {useState} from 'react';
 import ContactForm from '@/app/components/form';
-import Standard from "@/app/standard-info/page";
+import Standard from "@/app/components/standard";
 import Image from "next/image";
 
 export default function Contact() {

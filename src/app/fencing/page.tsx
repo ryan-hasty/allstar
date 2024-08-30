@@ -1,4 +1,4 @@
-import Standard from "@/app/standard-info/page";
+import Standard from "@/app/components/standard";
 import MultipleItems from "@/app/components/slider";
 import React from "react";
 
