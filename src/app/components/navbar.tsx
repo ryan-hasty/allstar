@@ -32,7 +32,7 @@ export default function Navbar({ navigationElements }: NavigationList) {
                     isDisplayed ? "translate-x-0" : "translate-x-full"
                 }`}
             >
-                <ul className="flex flex-col justify-start mt-20 gap-7 p-4 text-4xl font-semibold">
+                <ul className="flex flex-col justify-start mt-20 gap-7 p-4 text-4xl">
                     {navigationElements.map((element) => (
                         <li key={element.label}>
                             <a href={element.href} onClick={handleClick} className="hover:text-gray-400">
