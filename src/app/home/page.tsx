@@ -7,8 +7,9 @@ import {
     homePageDescription,
     homePageFencingDescription, homePageFencingTitle,
     homePageRoofingDescription, homePageRoofingTitle, homePageServiceAreaDescription, homePageServiceAreaTitle,
-    homePageTitle
+    homePageTitle, navigationElements
 } from "@/app/constants";
+import Navbar from "@/app/components/navbar";
 
 export default function Home() {
 

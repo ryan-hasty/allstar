@@ -174,3 +174,11 @@ export const allStarEmailAddress = "allstarfencing33@gmail.com"
 export const allStarFacebookHref = "https://www.facebook.com/profile.php?id=100077235862867"
 
 export const allStarPhoneNumber = "832-885-0753"
+
+export const navigationElements = [
+    { label: "HOME", href: "/home" },
+    { label: "ROOFING", href: "/roofing" },
+    { label: "FENCING", href: "/fencing" },
+    { label: "ABOUT", href: "/about" },
+    { label: "CONTACT", href: "/contact" }
+]
