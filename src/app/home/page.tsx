@@ -38,7 +38,7 @@ export default function Home() {
                 {/* Service Area Section */}
                 <div
                     className="flex flex-col justify-center align-middle items-center lg:flex lg:flex-row lg:items-center lg:space-x-20 w-full">
-                    <div className="-mt-52 lg:-mt-40">
+                    <div className="-mt-32 lg:-mt-36">
                         <Standard title={homePageServiceAreaTitle} description={homePageServiceAreaDescription}/>
                     </div>
                 </div>
