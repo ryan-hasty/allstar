@@ -1,3 +1,27 @@
+{/* About Page Constants */}
+export const aboutTitle = "Who We Are"
+
+export const paragraph1 = "Welcome to our family business! At Allstar, we’re more than just a company – we’re a family. " +
+    "Our story began with a shared dream and a commitment to hard work, founded by Aj and Jennifer McGee right here " +
+    "in the heart of Texas. What started as a small, local endeavor, driven by a passion for excellence and a " +
+    "dedication to our community, has grown into a trusted name in roofing and fencing."
+
+export const paragraph2 = "Allstar is family-owned and operated, with each member bringing their unique skills " +
+    "and a shared sense of purpose. Every day, we work side by side, embodying the values our parents instilled in " +
+    "us: integrity, respect, and unwavering commitment. We carry these principles into every roofing and fencing " +
+    "project we undertake, the Texas way."
+
+/*    let p3 = "We believe in treating our clients like family, ensuring that everyone that comes our way " +
+        "feels welcomed, heard, and valued."*/
+
+export const paragraph3 = "From small repairs to major roofing and fencing projects, we approach each task with the same " +
+    "care and attention to detail that we would for our own home. Our legacy is built on the trust and satisfaction " +
+    "of our clients, and we take immense pride in the relationships we’ve built over the years."
+
+export const paragraph4 = "At Allstar, family is at the heart of everything we do. We invite " +
+    "you to become a part of our story, knowing that when you work with us, you’re not just a client; you’re family."
+
+export const paragraph5 = "Welcome to Allstar – where our family takes care of yours, the Texas way."
 
 {/* Fencing Page Constants */}
 export const fencingImageUrls = [
