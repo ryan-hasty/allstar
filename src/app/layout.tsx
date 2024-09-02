@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
-import Header from "@/app/header/layout";
+import Header from "@/app/components/header";
 import Image from "next/image";
 
 

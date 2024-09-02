@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import ContactForm from '@/app/components/form';
 import Standard from "@/app/components/standard";
 import Image from "next/image";
+import {allStarEmailAddress, allStarFacebookHref, allStarPhoneNumber} from "@/app/constants";
 
 export default function Contact() {
     const [isClicked, setIsClicked] = useState(false);
@@ -22,7 +23,7 @@ export default function Contact() {
                         </div>
                         <div>
                             <a href="tel:832-885-0753" className="text-[#555555] hover:text-[#F50000] text-2xl font-bold">
-                            832-885-0753
+                                {allStarPhoneNumber}
                             </a>
                         </div>
                     </div>
@@ -33,13 +34,13 @@ export default function Contact() {
                             target="_blank"
                             className={`text-[#555555] hover:text-[#F50000] ${isClicked ? 'text-[#F50000]' : ''}`}
                             onClick={handleClick}>
-                            allstarfencing33@gmail.com
+                            {allStarEmailAddress}
                         </a>
 
                     </div>
                     <div className="mt-5 flex">
                         <a
-                            href="https://www.facebook.com/profile.php?id=100077235862867"
+                            href={allStarFacebookHref}
                             target={"_blank"}
                             className="bg-white">
                             <Image src="/assets/miscImages/facebook-logo.svg" alt="facebook-logo" width={40}

@@ -1,16 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { Sofia_Sans} from "next/font/google";
-import GeneralDesc from "@/app/components/general-desc";
 
-/*
-const sofia = Sofia_Sans({
-    weight: ['700'],
-    style: ['normal'],
-    subsets: ['latin']
-});
-*/
 
 interface GalleryBoxProps {
     title?: string

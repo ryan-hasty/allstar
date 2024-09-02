@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {allStarPhoneNumber} from "@/app/constants";
 
 
 export default function Header() {
@@ -8,6 +9,7 @@ export default function Header() {
     return (
         <div className="fixed top-0 min-w-full max-h-40 xl:max-h-60 xl:max-w-60 bg-[#FFFFFF] z-20">
             <div className="flex min-w-full items-center bg-[#FFFFFF]">
+                {/* Can change w-60 (try removing to see) on below line to increase size of nav bar at top*/}
                 <Image width={350} height={350} src="/assets/allstar-logo.jpg" alt="Allstar Logo" className="w-60 h-auto" priority={true}></Image>
                 <div className="z-50 h-1 md:h-2 bg-[#F50000] mr-10 w-5/12 md:w-10/12">
                     <div className="hidden md:block">
@@ -42,7 +44,7 @@ export default function Header() {
                             </li>
                             <li className="mr-14 -ml-14 text-[#0F2E6C] font-bold">
                                 <a href="tel:832-885-0753" className="hover:text-[#F50000]">
-                                    832-885-0753
+                                    {allStarPhoneNumber}
                                 </a>
                             </li>
                         </ul>
