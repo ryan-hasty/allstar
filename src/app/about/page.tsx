@@ -7,7 +7,7 @@ export default function About(){
         <>
             <div className="min-w-full">
                 <div className="flex justify-center">
-                    <div className="text-[#555555] mt-56 max-w-5xl md:max-w-none text-center">
+                    <div className="text-[#555555] mt-44 sm:mt-52 max-w-5xl md:max-w-none text-center">
                         <div className="pb-10 text-6xl font-bold -mb-5 text-[#0F2E6C]">
                             {aboutTitle}
                         </div>
