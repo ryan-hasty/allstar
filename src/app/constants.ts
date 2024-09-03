@@ -191,7 +191,7 @@ export const homePageServiceAreaDescription = "Our extensive reach means we're a
     "the unique needs of our local communities and are dedicated to exceeding expectations, " +
     "providing comprehensive solutions that extend far beyond Baytown."
 
-
+export const serviceRadiusUrl = "/assets/miscImages/radiusNew.jpeg"
 {/* Contact Constants */}
 export const allStarEmailAddress = "allstarfencing33@gmail.com"
 

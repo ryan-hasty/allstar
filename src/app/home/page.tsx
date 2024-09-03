@@ -7,9 +7,9 @@ import {
     homePageDescription,
     homePageFencingDescription, homePageFencingTitle,
     homePageRoofingDescription, homePageRoofingTitle, homePageServiceAreaDescription, homePageServiceAreaTitle,
-    homePageTitle, navigationElements
+    homePageTitle, serviceRadiusUrl
 } from "@/app/constants";
-import Navbar from "@/app/components/navbar";
+import Radius from "@/app/components/radius";
 
 export default function Home() {
 
@@ -40,6 +40,7 @@ export default function Home() {
                     className="flex flex-col justify-center align-middle items-center lg:flex lg:flex-row lg:items-center lg:space-x-20 w-full">
                     <div className="-mt-32 lg:-mt-36">
                         <Standard title={homePageServiceAreaTitle} description={homePageServiceAreaDescription}/>
+                        <Radius serviceRadiusUrl={serviceRadiusUrl}/>
                     </div>
                 </div>
             </div>
