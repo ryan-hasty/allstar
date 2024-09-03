@@ -85,10 +85,12 @@ export const fencingImageUrls = [
 ];
 
 export const fencingTitle = "Fencing Replacements and Repairs"
-export const fencingDescription = "We specialize in providing durable roofing solutions with expert installation " +
-    "and meticulous attention to detail. We use hand-driven nails to ensure precise placement, optimal " +
-    "sealing, and enhanced durability. This meticulous approach extends lifespan, ensures exceptional " +
-    "performance, and adds value to your property. We deliver roofing solutions that stand the test of time."
+export const fencingDescription = "We provide high-quality, durable, and stylish fencing solutions tailored to your needs. " +
+    "Our expert team ensures professional installation, compliance with local regulations, " +
+    "and a range of customizable designs. We focus on using premium materials for " +
+    "low-maintenance and long-lasting fences, backed by comprehensive warranties. " +
+    "Enhance your property's security, privacy, and curb appeal with Allstar's " +
+    "exceptional fencing services."
 
 
 {/* Roofing Page Constants */}
