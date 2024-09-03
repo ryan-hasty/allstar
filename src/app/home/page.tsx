@@ -20,7 +20,7 @@ export default function Home() {
             <div className="flex flex-col items-start justify-center lg:space-y-20 lg:pt-10 m-7 lg:m-20">
                 {/* Roofing Section */}
                 <div
-                    className="flex flex-col justify-center align-middle items-center lg:flex lg:flex-row lg:items-center lg:space-x-20 w-full">
+                    className="flex flex-col justify-center align-middle items-center lg:flex lg:flex-row lg:items-center lg:space-x-20 w-full mb-10 lg:mb-0">
                     <GalleryBox title={homePageRoofingTitle} imageUrl={"/assets/roofImages/roof1.jpg"} href={"/roofing"}/>
                     <GeneralDesc
                         desc={homePageRoofingDescription}/>

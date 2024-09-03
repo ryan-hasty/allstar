@@ -16,7 +16,7 @@ export default function GalleryBox({ title, imageUrl, href }: GalleryBoxProps) {
             <div className="relative w-full mb-5 lg:mb-0">
                 <Image src={imageUrl || ""} alt={title || ""} height={1000} width={1000} className="w-full max-h-80 object-fit"/>
                 <div className="absolute inset-0 bg-[#0F2E6C] opacity-50 hover:bg-[#555555]"></div>
-                <div className="absolute bottom-0 left-0 lg:ml-7 ml-2 mb-2 lg:mb-7 text-white text-3xl lg:text-6xl">{title}</div>
+                <div className="absolute bottom-0 left-0 lg:ml-7 ml-3 mb-3 lg:mb-7 text-white text-4xl lg:text-6xl">{title}</div>
             </div>
         </Link>
     );

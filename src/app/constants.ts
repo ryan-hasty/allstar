@@ -195,6 +195,8 @@ export const homePageServiceAreaDescription = "Our extensive reach means we're a
 {/* Contact Constants */}
 export const allStarEmailAddress = "allstarfencing33@gmail.com"
 
+export const mailToUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=rhastydev@gmail.com"
+
 export const allStarFacebookHref = "https://www.facebook.com/profile.php?id=100077235862867"
 
 export const allStarPhoneNumber = "832-885-0753"

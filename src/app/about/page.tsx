@@ -8,7 +8,7 @@ export default function About(){
             <div className="min-w-full">
                 <div className="flex justify-center">
                     <div className="text-[#555555] mt-44 sm:mt-52 max-w-5xl md:max-w-none text-center">
-                        <div className="pb-10 text-6xl font-semibold -mb-5 text-[#0F2E6C]">
+                        <div className="pb-10 text-6xl font-semibold text-[#0F2E6C]">
                             {aboutTitle}
                         </div>
                     </div>
@@ -31,7 +31,7 @@ export default function About(){
                             <p className="mb-10">{paragraph2}</p>
                             <p className="mb-10">{paragraph3}</p>
                             <p className="mb-10">{paragraph4}</p>
-                            <p className="mb-10">{paragraph5}</p>
+                            <p>{paragraph5}</p>
                         </div>
                     </div>
 

@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import ContactForm from '@/app/components/form';
 import Standard from "@/app/components/standard";
 import Image from "next/image";
-import {allStarEmailAddress, allStarFacebookHref, allStarPhoneNumber} from "@/app/constants";
+import {allStarEmailAddress, allStarFacebookHref, allStarPhoneNumber, mailToUrl} from "@/app/constants";
 
 export default function Contact() {
     const [isClicked, setIsClicked] = useState(false);
@@ -30,7 +30,7 @@ export default function Contact() {
                     <div className="mb-6">
                         <div className="text-3xl font-bold text-[#0F2E6C]">Email:</div>
                         <a
-                            href="https://mail.google.com/mail/?view=cm&fs=1&to=allstarfencing33@gmail.com"
+                            href={mailToUrl}
                             target="_blank"
                             className={`text-[#555555] hover:text-[#F50000] ${isClicked ? 'text-[#F50000]' : ''}`}
                             onClick={handleClick}>

@@ -40,7 +40,7 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li className="ml-auto text-2xl text-[#0F2E6C] font-bold">
-                                GIVE US A CALL!
+                                FREE ESTIMATE!
                             </li>
                             <li className="mr-14 -ml-14 text-[#0F2E6C] font-bold">
                                 <a href="tel:832-885-0753" className="hover:text-[#F50000]">
