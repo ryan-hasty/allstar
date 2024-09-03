@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import Image from "next/image";
 import { useState } from "react";
 
@@ -43,6 +43,7 @@ function MultipleItems({ images }: ImageList) {
     const goToNextImage = () => {
         setCurrentImageIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     }
+
     // Function to navigate to the clicked set
     const goToClickedSet = (setIndex: number) => {
         setCurrentSet(setIndex);
@@ -50,11 +51,14 @@ function MultipleItems({ images }: ImageList) {
 
     return (
         <div className="slider-container w-9/12 mt-14 mb-20 border-8 border-white mx-auto relative">
-            {/* Left arrow > Medium Sized Screens*/}
-            <div>
-                <a href={`#set${currentSet}`}
-                   className="hidden md:flex absolute -left-20 top-40 transform -translate-y-1/3 z-10 btn btn-circle m-4 bg-[#FFFFFF] text-lg text-[#555555] border-0 shadow-none"
-                   onClick={goToPreviousSet}>❮</a>
+            {/* Left arrow > Medium Sized Screens */}
+            <div className="hidden md:flex absolute top-1/2 transform -translate-y-1/2 -left-16 z-10 -mt-10">
+                <button
+                    onClick={goToPreviousSet}
+                    className="text-6xl text-[#555555] bg-[#FFFFFF] border-0 rounded-full p-2 shadow-md hover:scale-110 transition-transform"
+                >
+                    ❮
+                </button>
             </div>
 
             {/* Carousel > Medium Sized Screens */}
@@ -66,24 +70,29 @@ function MultipleItems({ images }: ImageList) {
                 ))}
             </div>
 
-            {/* Right arrow > Medium Sized Screens*/}
-            <div>
-                <a href={`#set${currentSet}`}
-                   className="hidden md:flex absolute -right-20 top-40 transform -translate-y-1/3 z-10 btn btn-circle m-4 bg-[#FFFFFF] text-lg text-[#555555] border-0 shadow-none"
-                   onClick={goToNextSet}
-                >❯</a>
+            {/* Right arrow > Medium Sized Screens */}
+            <div className="hidden md:flex absolute top-1/2 transform -translate-y-1/2 -right-16 z-10 -mt-10">
+                <button
+                    onClick={goToNextSet}
+                    className="text-6xl text-[#555555] bg-[#FFFFFF] border-0 rounded-full p-2 shadow-md hover:scale-110 transition-transform"
+                >
+                    ❯
+                </button>
             </div>
 
-            {/* Left arrow  < Medium Sized Screens */}
-            <div>
-                <a href={`#set${currentImageIndex}`}
-                   className="md:hidden absolute -left-16 top-20 z-10 btn btn-circle m-4 bg-[#FFFFFF] text-lg text-[#555555] border-0 shadow-none"
-                   onClick={goToPreviousImage}>❮</a>
+            {/* Left arrow < Medium Sized Screens */}
+            <div className="md:hidden absolute top-1/2 transform -translate-y-1/2 -left-12 md:-left-10 z-10">
+                <button
+                    onClick={goToPreviousImage}
+                    className="text-4xl text-[#555555] bg-[#FFFFFF] border-0 rounded-full p-2 shadow-md hover:scale-110 transition-transform"
+                >
+                    ❮
+                </button>
             </div>
 
             {/* Carousel - single image */}
             <div className="carousel w-full flex overflow-hidden md:hidden">
-                <div id={`image${currentImageIndex}`} className="carousel-item relative w-full p-2">
+                <div id={`image${currentImageIndex}`} className="carousel-item relative w-full">
                     <Image
                         src={images[currentImageIndex]} width={800} height={800} alt={`Image ${currentImageIndex}`}
                         className="object-cover max-h-52"
@@ -91,26 +100,25 @@ function MultipleItems({ images }: ImageList) {
                 </div>
             </div>
 
-            {/* Right arrow < Medium Sized Screens*/}
-            <div>
-                <a href={`#set${currentImageIndex}`}
-                   className="md:hidden absolute -right-16 top-20 z-10 btn btn-circle m-4 bg-[#FFFFFF] text-lg text-[#555555] border-0 shadow-none"
-                   onClick={goToNextImage}
-                >❯</a>
+            {/* Right arrow < Medium Sized Screens */}
+            <div className="md:hidden absolute top-1/2 transform -translate-y-1/2 -right-12 md:-right-10 z-10">
+                <button
+                    onClick={goToNextImage}
+                    className="text-4xl text-[#555555] bg-[#FFFFFF] border-0 rounded-full p-2 shadow-md hover:scale-110 transition-transform">
+                    ❯
+                </button>
             </div>
 
-            {/* Bottom buttons  ONLY on Medium+ Screens*/}
+            {/* Bottom buttons ONLY on Medium+ Screens */}
             <div className="hidden md:flex py-4 justify-center">
                 <div className="flex gap-4">
                     {sets.map((_, index) => (
-                        <a
+                        <button
                             key={index}
-                            href={`#set${index}`}
-                            className="btn btn-md bg-[#FFFFFF] text-lg text-[#555555] border-0 shadow-none"
                             onClick={() => goToClickedSet(index)}
-                        >
+                            className="btn btn-md bg-[#FFFFFF] text-xl text-[#555555] border-0 shadow-none">
                             {index + 1}
-                        </a>
+                        </button>
                     ))}
                 </div>
             </div>
