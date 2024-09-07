@@ -14,15 +14,15 @@ export default function Navbar({ navigationElements }: NavigationList) {
     };
 
     return (
-        <div className="block md:hidden">
+        <div className="block lg:hidden">
             {/* Hamburger Button */}
             <button onClick={handleClick}>
                 <Image
                     src={isDisplayed ? "/assets/buttonImages/close.png" : "/assets/buttonImages/hamburger.png"}
                     alt="Menu Button"
-                    width={30}
-                    height={30}
-                    className="fixed top-4 right-4 z-50"
+                    width={32}
+                    height={32}
+                    className="fixed top-7 right-10 z-50"
                 />
             </button>
 

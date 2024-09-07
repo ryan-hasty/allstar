@@ -11,9 +11,9 @@ export default function Header() {
             <div className="flex min-w-full items-center bg-[#FFFFFF]">
                 {/* Can change w-60 (try removing to see) on below line to increase size of nav bar at top*/}
                 <Image width={350} height={350} src="/assets/allstar-logo.jpg" alt="Allstar Logo" className="w-60 h-auto" priority={true}></Image>
-                <div className="z-50 h-1 md:h-2 bg-[#F50000] mr-10 w-5/12 md:w-10/12">
-                    <div className="hidden md:block">
-                        <ul className="z-40 flex justify-start text-nowrap -mt-9 ml-16 xl:top-20 about-line-position text-2xl gap-20 w-.75 font-sans text-[#0F2E6C]">
+                <div className="z-50 h-1 md:h-1.5 bg-[#F50000] mr-10 w-10/12">
+                    <div className="hidden lg:block">
+                        <ul className="z-40 flex justify-start text-nowrap -mt-9 ml-16 xl:top-20 about-line-position text-2xl xl:text-2xl gap-10 xl:gap-20 w-.75 font-sans text-[#0F2E6C]">
                             <li>
                                 <Link href={"/home"} className="hover:text-[#F50000]">
                                     Home
@@ -39,10 +39,10 @@ export default function Header() {
                                     Contact
                                 </Link>
                             </li>
-                            <li className="ml-auto text-2xl text-[#0F2E6C] font-bold">
+                            <li className="hidden 2xl:block ml-auto text-xl xl:text-2xl text-[#0F2E6C] font-bold">
                                 FREE ESTIMATE!
                             </li>
-                            <li className="mr-14 -ml-14 text-[#0F2E6C] font-bold">
+                            <li className="xl:mr-14 xl:-ml-14 2xl:pl-0 xl:pl-20 text-[#0F2E6C] font-bold">
                                 <a href="tel:832-885-0753" className="hover:text-[#F50000]">
                                     {allStarPhoneNumber}
                                 </a>

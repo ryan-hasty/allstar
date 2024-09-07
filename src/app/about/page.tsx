@@ -14,19 +14,20 @@ export default function About(){
                     </div>
                 </div>
                 <div className="flex justify-center mb-20">
+                    {/* Below code block is for text blocks*/}
                     <div
-                        className="hidden md:block text-xl text-[#555555] text-left mt-12 max-w-32 max-h-32 md:max-w-3xl">
+                        className="hidden 2xl:block text-xl text-[#555555] text-left mt-12 max-w-32 max-h-32 md:max-w-3xl">
                         <p className="mb-10">{paragraph1}</p>
                         <p className="mb-10">{paragraph2}</p>
                         <p className="mb-10">{paragraph3}</p>
                         <p className="mb-10">{paragraph4}</p>
                         <p className="mb-10">{paragraph5}</p>
                     </div>
-                    <div className="flex flex-col items-center sm:hidden">
+                    <div className="flex flex-col items-center 2xl:hidden">
                         <Image width={800} height={800} src="/assets/tempFamilyPhoto.jpg" alt="Family Photo"
-                               className="max-w-80 mt-8"/>
+                               className="max-w-80 md:max-w-fit mt-8"/>
                         <div
-                            className="text-xl text-[#555555] text-center mt-12 max-w-80 md:max-w-3xl">
+                            className="2xl:hidden text-xl text-[#555555] text-center mt-12 max-w-80 md:max-w-3xl">
                             <p className="mb-10">{paragraph1}</p>
                             <p className="mb-10">{paragraph2}</p>
                             <p className="mb-10">{paragraph3}</p>
@@ -35,7 +36,7 @@ export default function About(){
                         </div>
                     </div>
 
-                    <div className="sm:flex hidden">
+                    <div className="2xl:flex hidden">
                         <Image width={625} height={625} src="/assets/tempFamilyPhoto.jpg" alt="Family Photo"
                                className="ml-24 mt-14 max-w-sm md:max-w-none md:max-h-none"/>
                     </div>

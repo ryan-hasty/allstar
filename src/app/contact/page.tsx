@@ -15,9 +15,9 @@ export default function Contact() {
     return (
         <div className="max-w-5xl mx-auto py-8">
             <Standard title={"Contact Allstar"} />
-            <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-12 sm:mt-8 lg:ml-32">
-                <div className="flex flex-col text-2xl gap-y-4 font-semibold text-center md:text-left">
-                    <div className="mb-6 sm:mt-10">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-12 sm:mt-8 lg:ml-32">
+                <div className="flex flex-col text-2xl gap-y-4 font-semibold text-center lg:text-left">
+                    <div className="mb-6 lg:mt-10">
                         <div className="sm:text-3xl text-2xl font-bold text-[#0F2E6C]">
                             CALL NOW!
                         </div>
@@ -48,7 +48,7 @@ export default function Contact() {
                         </a>
                     </div>
                 </div>
-                <div className="w-full max-w-xs md:max-w-2xl">
+                <div className="w-full max-w-xs sm:max-w-xl">
                     <ContactForm/>
                 </div>
             </div>

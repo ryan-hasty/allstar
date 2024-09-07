@@ -7,8 +7,8 @@ interface ServiceUrl{
 export default function Radius({ serviceRadiusUrl }: ServiceUrl){
 
     return (
-        <div className="flex justify-center mt-7 sm:mt-28">
-            <Image src={serviceRadiusUrl || ""}  width={900} height={900} alt={"Service Radius" || ""}/>
+        <div className="flex justify-center mt-7 sm:mt-10">
+            <Image src={serviceRadiusUrl || ""}  width={750} height={750} alt={"Service Radius" || ""}/>
         </div>
     )
 }
