@@ -23,9 +23,11 @@ export default function Navbar({ navigationElements }: NavigationList) {
                     width={32}
                     height={32}
                     className="fixed top-7 right-10 z-50"
-                />
+                    style={{
+                        maxWidth: "100%",
+                        height: "auto"
+                    }} />
             </button>
-
             {/* Dropdown Menu */}
             <div
                 className={`fixed top-0 right-0 w-full h-full bg-blue-950 text-white z-40 duration-300 transform ${

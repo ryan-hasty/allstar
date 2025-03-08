@@ -10,8 +10,16 @@ export function Footer() {
                 href="https://www.facebook.com/profile.php?id=100077235862867"
                 target={"_blank"}
                 className="bg-white sm:ml-20">
-                <Image src="/assets/miscImages/facebook-logo.svg" alt="facebook-logo" width={34} height={34}
-                       className="h-auto"></Image>
+                <Image
+                    src="/assets/miscImages/facebook-logo.svg"
+                    alt="facebook-logo"
+                    width={34}
+                    height={34}
+                    className="h-auto"
+                    style={{
+                        maxWidth: "100%",
+                        height: "auto"
+                    }}></Image>
             </a>
             <a
                 href="https://www.linkedin.com/in/ryan-hasty/"
@@ -20,5 +28,5 @@ export function Footer() {
                 Created by Ryan Hasty
             </a>
         </footer>
-    )
+    );
 }

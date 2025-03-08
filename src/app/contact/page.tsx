@@ -43,8 +43,15 @@ export default function Contact() {
                             href={allStarFacebookHref}
                             target={"_blank"}
                             className="bg-white">
-                            <Image src="/assets/miscImages/facebook-logo.svg" alt="facebook-logo" width={40}
-                                   height={40}></Image>
+                            <Image
+                                src="/assets/miscImages/facebook-logo.svg"
+                                alt="facebook-logo"
+                                width={40}
+                                height={40}
+                                style={{
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }}></Image>
                         </a>
                     </div>
                 </div>

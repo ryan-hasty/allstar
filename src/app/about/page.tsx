@@ -24,8 +24,16 @@ export default function About(){
                         <p className="mb-10">{paragraph5}</p>
                     </div>
                     <div className="flex flex-col items-center 2xl:hidden">
-                        <Image width={800} height={800} src="/assets/tempFamilyPhoto.jpg" alt="Family Photo"
-                               className="max-w-80 md:max-w-fit mt-8"/>
+                        <Image
+                            width={800}
+                            height={800}
+                            src="/assets/tempFamilyPhoto.jpg"
+                            alt="Family Photo"
+                            className="max-w-80 md:max-w-fit mt-8"
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
                         <div
                             className="2xl:hidden text-xl text-[#555555] text-center mt-12 max-w-80 md:max-w-3xl">
                             <p className="mb-10">{paragraph1}</p>
@@ -37,11 +45,19 @@ export default function About(){
                     </div>
 
                     <div className="2xl:flex hidden">
-                        <Image width={625} height={625} src="/assets/tempFamilyPhoto.jpg" alt="Family Photo"
-                               className="ml-24 mt-14 max-w-sm md:max-w-none md:max-h-none"/>
+                        <Image
+                            width={625}
+                            height={625}
+                            src="/assets/tempFamilyPhoto.jpg"
+                            alt="Family Photo"
+                            className="ml-24 mt-14 max-w-sm md:max-w-none md:max-h-none"
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }
